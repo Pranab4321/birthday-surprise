@@ -1,0 +1,214 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(ellipse at 50% 25%, #31091d 0%, transparent 48%),
+        radial-gradient(ellipse at 10% 85%, #300619 0%, transparent 45%),
+        #080307;
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* Background glow */
+
+.background-glow {
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #e6005b;
+    filter: blur(180px);
+    opacity: 0.12;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+/* Heart particles container */
+
+#heart-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Main screen */
+
+.login-screen {
+    position: relative;
+    z-index: 2;
+    width: min(42vw, 560px);
+    min-width: 320px;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+/* Lock icon */
+
+.lock-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 7px;
+    filter: drop-shadow(0 0 12px #ff2780);
+    animation: lock-glow 2s infinite alternate;
+}
+
+.lock-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Heading */
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #ffe5ef;
+    text-shadow: 0 0 15px rgba(255, 83, 151, 0.4);
+    margin-bottom: 3px;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #d9b9c6;
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.subtitle span,
+footer span {
+    color: #ff438a;
+}
+
+/* Login card */
+
+
+.login-card {
+    width: 100%;
+    padding: 22px 18px 17px;
+    border-radius: 15px;
+
+    background: rgba(40, 12, 27, 0.65);
+
+    border: 1px solid rgba(255, 125, 173, 0.28);
+
+    box-shadow:
+        0 0 30px rgba(255, 0, 94, 0.12),
+        inset 0 0 18px rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(15px);
+}
+
+
+/* Input fields */
+
+.input-group {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin-bottom: 12px;
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.input-icon {
+    color: #ffc0d8;
+    font-size: 13px;
+    margin-right: 9px;
+}
+
+.input-group input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fce4ee;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+
+.input-group input::placeholder {
+    color: #a98c9a;
+}
+
+.toggle-password {
+    border: none;
+    background: transparent;
+    color: #e9c6d5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password svg {
+    width: 15px;
+    height: 15px;
+}
+
+/* Unlock button */
+
+.unlock-button {
+    width: 100%;
+    height: 39px;
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        100deg,
+        #e91e63,
+        #c91555,
+        #e92c78
+    );
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 18px rgba(235, 20, 100, 0.35),
+        inset 0 1px 2px rgba(255,255,255,0.2);
+
+    transition: 0.3s ease;
+}
+
+.unlock-button span {
+    margin-left: 4px;
+}
+
+.unlock-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px rgba(255, 20, 110, 0.55);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 25px;
+    font-size: 9px;
+    color: #c6a3b2;
+    font-weight: 300;
+}
+
+footer span {
+    margin-right: 4px;
+}
