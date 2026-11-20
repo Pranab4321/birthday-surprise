@@ -282,3 +282,62 @@
         font-size: 14px;
     }
 }
+
+@media (max-width: 600px) {
+    .letter-screen {
+        padding: 25px 15px;
+    }
+
+    .letter-subtitle {
+        font-size: 17px;
+    }
+
+    .letter-card {
+        padding: 30px 22px;
+    }
+
+    .letter-body {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .letter-greeting {
+        font-size: 22px;
+    }
+
+    .letter-closing span {
+        font-size: 30px;
+    }
+
+    .final-surprise-button {
+        padding: 11px 28px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .final-screen {
+        padding: 30px 18px;
+    }
+
+    .final-message {
+        font-size: 20px;
+    }
+
+    .final-wish {
+        font-size: 18px;
+    }
+
+    .final-decoration {
+        font-size: 30px;
+    }
+
+    .final-signature {
+        font-size: 18px;
+    }
+
+    .replay-button {
+        padding: 11px 25px;
+        font-size: 14px;
+    }
+}

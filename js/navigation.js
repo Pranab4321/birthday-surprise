@@ -149,3 +149,22 @@ if (continueToLetterButton) {
         showScreen("letter-screen");
     });
 }
+
+
+const finalSurpriseButton = document.getElementById(
+    "final-surprise-button"
+);
+
+if (finalSurpriseButton) {
+    finalSurpriseButton.addEventListener("click", () => {
+        showScreen("final-screen");
+    });
+}
+
+const replayButton = document.getElementById("replay-button");
+
+if (replayButton) {
+    replayButton.addEventListener("click", () => {
+        showScreen("birthday-screen");
+    });
+}

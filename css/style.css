@@ -744,3 +744,238 @@ footer span {
     transform: translateY(-3px);
     box-shadow: 0 0 20px rgba(246, 198, 216, 0.4);
 }
+
+
+/* SCREEN 5: A LETTER FROM NUR */
+
+.letter-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(ellipse at 50% 25%, #31091d 0%, transparent 48%),
+        radial-gradient(ellipse at 10% 85%, #300619 0%, transparent 45%),
+        #080307;
+
+    color: #fff;
+    text-align: center;
+}
+
+.letter-screen[hidden] {
+    display: none !important;
+}
+
+.letter-content {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.letter-title {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #f6c6d8;
+    margin: 15px 0 5px;
+}
+
+.letter-subtitle {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    color: #e8b8ca;
+    margin-bottom: 30px;
+}
+
+.letter-card {
+    position: relative;
+    padding: 45px 50px;
+    background: linear-gradient(145deg, #f9e9e9, #f3d9df);
+    color: #542b3b;
+    border: 2px solid #e9b6c8;
+    border-radius: 8px;
+    box-shadow:
+        0 0 25px rgba(246, 198, 216, 0.2),
+        0 15px 40px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+
+.letter-decoration {
+    text-align: center;
+    font-size: 35px;
+    color: #b75b7d;
+    margin-bottom: 20px;
+}
+
+.letter-body {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.letter-body p {
+    margin-bottom: 18px;
+}
+
+.letter-greeting {
+    font-size: 25px;
+    font-weight: bold;
+    color: #873c5b;
+}
+
+.letter-closing {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.letter-closing span {
+    font-family: "Great Vibes", cursive;
+    font-size: 35px;
+    color: #a13d65;
+}
+
+.final-surprise-button {
+    margin-top: 30px;
+    padding: 13px 35px;
+    border: 1px solid #f6c6d8;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8e3158, #c65b83);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.final-surprise-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(246, 198, 216, 0.4);
+}
+
+
+/* SCREEN 6: FINAL BIRTHDAY CELEBRATION */
+
+.final-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(ellipse at 50% 25%, #4a102c 0%, transparent 50%),
+        radial-gradient(ellipse at 10% 85%, #300619 0%, transparent 45%),
+        #080307;
+
+    color: #fff;
+    text-align: center;
+}
+
+.final-screen[hidden] {
+    display: none !important;
+}
+
+.final-content {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    animation: finalEntrance 1.5s ease;
+}
+
+.final-hearts {
+    color: #ff8eb5;
+    font-size: 30px;
+    letter-spacing: 12px;
+    margin: 20px 0;
+    animation: finalHeartBeat 1.5s infinite;
+}
+
+.final-title {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(3rem, 8vw, 6rem);
+    color: #f6c6d8;
+    margin: 10px 0;
+    text-shadow: 0 0 25px rgba(255, 150, 190, 0.4);
+}
+
+.final-name {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(3rem, 7vw, 5rem);
+    color: #ff9fc1;
+    margin-bottom: 25px;
+}
+
+.final-message {
+    max-width: 550px;
+    margin: 0 auto 20px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    line-height: 1.7;
+    color: #f4dce5;
+}
+
+.final-wish {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    color: #eeb6ca;
+    margin-bottom: 25px;
+}
+
+.final-decoration {
+    font-size: 38px;
+    margin: 25px 0;
+}
+
+.final-signature {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #f4dce5;
+}
+
+.final-signature span {
+    font-family: "Great Vibes", cursive;
+    font-size: 38px;
+    color: #ff9fc1;
+}
+
+.replay-button {
+    margin-top: 30px;
+    padding: 13px 35px;
+    border: 1px solid #f6c6d8;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8e3158, #c65b83);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.replay-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(246, 198, 216, 0.4);
+}
+
+@keyframes finalEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes finalHeartBeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+}
