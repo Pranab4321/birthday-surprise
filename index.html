@@ -1,50 +1,76 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Access Our World ❤️</title>
+    <title>Our Special World ❤️</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
 
+    <!-- BACKGROUND EFFECTS -->
+
     <div class="background-glow"></div>
     <div id="heart-container"></div>
 
-    <main class="login-screen">
+
+    <!-- ==================================
+         SCREEN 1: ACCESS OUR WORLD
+    =================================== -->
+
+    <main class="login-screen" id="login-screen">
 
         <!-- Lock Icon -->
+
         <div class="lock-icon">
+
             <svg viewBox="0 0 64 64" fill="none">
+
                 <path d="M19 27V19C19 11.8 24.8 6 32 6C39.2 6 45 11.8 45 19V27"
-                    stroke="#ff80bb" stroke-width="3.5" stroke-linecap="round"/>
+                    stroke="#ff80bb"
+                    stroke-width="3.5"
+                    stroke-linecap="round"/>
+
                 <rect x="12" y="25" width="40" height="33" rx="13"
                     fill="#ff4d91"/>
+
                 <path d="M32 35C28.8 35 26.5 37.3 26.5 40.2C26.5 42 27.4 43.5 28.8 44.5V49H35.2V44.5C36.6 43.5 37.5 42 37.5 40.2C37.5 37.3 35.2 35 32 35Z"
                     fill="#5b092b"/>
+
             </svg>
+
         </div>
 
+
         <!-- Heading -->
+
         <h1>Access Our World</h1>
 
         <p class="subtitle">
             A special place, just for you <span>♥</span>
         </p>
 
-        <!-- Login Card -->
+
+        <!-- Login Form -->
+
         <form class="login-card" id="login-form">
+
+            <!-- Username -->
 
             <div class="input-group">
 
@@ -61,6 +87,9 @@
 
             </div>
 
+
+            <!-- Password -->
+
             <div class="input-group">
 
                 <span class="input-icon">♙</span>
@@ -69,7 +98,6 @@
                     type="password"
                     id="password"
                     placeholder="Password"
-                    value="22••••••••••"
                     required
                 >
 
@@ -79,15 +107,25 @@
                     id="toggle-password"
                     aria-label="Show password"
                 >
+
                     <svg viewBox="0 0 24 24" fill="none">
+
                         <path d="M2 12S5.5 5.5 12 5.5S22 12 22 12S18.5 18.5 12 18.5S2 12 2 12Z"
-                            stroke="currentColor" stroke-width="1.6"/>
+                            stroke="currentColor"
+                            stroke-width="1.6"/>
+
                         <circle cx="12" cy="12" r="3"
-                            stroke="currentColor" stroke-width="1.6"/>
+                            stroke="currentColor"
+                            stroke-width="1.6"/>
+
                     </svg>
+
                 </button>
 
             </div>
+
+
+            <!-- Unlock Button -->
 
             <button type="submit" class="unlock-button">
                 Unlock Surprise <span>♥</span>
@@ -95,16 +133,292 @@
 
         </form>
 
+
         <!-- Footer -->
+
         <footer>
             <span>♥</span> Made with love by Kamali
         </footer>
 
     </main>
 
+
+
+    <!-- ==================================
+         SCREEN 2: BIRTHDAY WELCOME
+    =================================== -->
+
+    <section
+        class="birthday-screen"
+        id="birthday-screen"
+        hidden
+    >
+
+        <!-- Screen Number -->
+
+        <div class="screen-number">2</div>
+
+
+        <!-- Music Icon -->
+
+        <button
+            class="music-icon"
+            id="music-toggle"
+            aria-label="Toggle music"
+        >
+            ♫
+        </button>
+
+
+        <!-- Confetti Container -->
+
+        <div
+            class="confetti-container"
+            id="confetti-container"
+        ></div>
+
+
+        <!-- Birthday Content -->
+
+        <div class="birthday-content">
+
+            <h2 class="birthday-title">
+
+                Happy
+
+                <span class="script-text">
+                    Birthday
+                </span>
+
+                Tharveen
+
+                <span class="birthday-heart">
+                    ♡
+                </span>
+
+            </h2>
+
+
+            <!-- Date -->
+
+            <p class="birthday-date">
+                ♥ &nbsp; 22 August &nbsp; ♥
+            </p>
+
+
+            <!-- Birthday Message -->
+
+            <p class="birthday-message">
+                Today is all about you and all the happiness<br>
+                you bring into my life every single day.
+            </p>
+
+
+            <!-- Next Screen Button -->
+
+            <button
+                class="unfold-button"
+                id="unfold-button"
+            >
+                Unfold Love &nbsp; ♥
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================
+         SCREEN 3: PRECIOUS MEMORIES
+    =================================== -->
+
+    <section
+        class="memories-screen"
+        id="memories-screen"
+        hidden
+    >
+
+        <!-- Screen Number -->
+
+        <div class="screen-number">3</div>
+
+
+        <!-- Memories Content -->
+
+        <div class="memories-content">
+
+
+            <!-- Heading -->
+
+            <h2 class="memories-title">
+                ♥ Our Precious Memories <span>♥</span>
+            </h2>
+
+
+            <p class="memories-subtitle">
+                Moments that mean everything
+            </p>
+
+
+            <!-- PHOTO GALLERY -->
+
+            <div class="memory-gallery">
+
+
+                <!-- MEMORY 1 -->
+
+                <div class="polaroid polaroid-1">
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="assets/images/memory1.png"
+                            alt="Our Smile"
+                        >
+
+                    </div>
+
+                    <div class="flower-decoration">
+                        🌸
+                    </div>
+
+                    <p>My Happy Place</p>
+
+                </div>
+
+
+
+                <!-- MEMORY 2 -->
+
+                <div class="polaroid polaroid-2">
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="assets/images/memory2.png"
+                            alt="Our Favorite Moment"
+                        >
+
+                    </div>
+
+                    <div class="flower-decoration">
+                        🌸
+                    </div>
+
+                    <p>Nonchalant You</p>
+
+                </div>
+
+
+
+                <!-- MEMORY 3 -->
+
+                <div class="polaroid polaroid-3">
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="assets/images/memory3.png"
+                            alt="Together Forever"
+                        >
+
+                    </div>
+
+                    <div class="flower-decoration">
+                        🌸
+                    </div>
+
+                    <p>Our Favorite Moment</p>
+
+                </div>
+
+
+
+                <!-- MEMORY 4 -->
+
+                <div class="polaroid polaroid-4">
+
+                    <div class="photo-wrapper">
+
+                        <img
+                            src="assets/images/memory4.png"
+                            alt="My Happy Place"
+                        >
+
+                    </div>
+
+                    <div class="flower-decoration">
+                        🌸
+                    </div>
+
+                    <p>Our First Meet</p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Play Movie Button -->
+
+            <button
+                class="play-movie-button"
+                id="play-movie-button"
+            >
+                Play My Movie &nbsp; ♥
+            </button>
+
+
+        </div>
+
+    </section>
+
+    <!-- Screen 4: Our Special Video -->
+<section class="video-screen" id="video-screen" hidden>
+
+    <div class="video-content">
+
+        <span class="screen-number">04</span>
+
+        <h1 class="video-title">Our Special Video</h1>
+
+        <div class="video-frame">
+            <video
+                id="special-video"
+                controls
+                playsinline
+                preload="metadata"
+            >
+                <source
+                    src="assets/videos/special-video.mp4"
+                    type="video/mp4"
+                >
+                Your browser does not support video playback.
+            </video>
+        </div>
+
+        <button id="continue-to-letter-button" class="continue-button">
+            Continue
+        </button>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ==================================
+         JAVASCRIPT FILES
+    =================================== -->
+
     <script src="js/effects.js"></script>
+
     <script src="js/navigation.js"></script>
+
     <script src="js/main.js"></script>
 
+
 </body>
+
 </html>

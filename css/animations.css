@@ -70,3 +70,67 @@
         transform: translateY(0);
     }
 }
+
+
+/* Birthday screen entrance */
+
+@keyframes birthday-entrance {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Glowing birthday heart */
+
+@keyframes heart-beat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+}
+
+/* Confetti falling */
+
+.confetti {
+    position: absolute;
+    top: -15px;
+
+    width: 4px;
+    height: 7px;
+
+    opacity: 0.8;
+
+    animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+
+}
+

@@ -39,3 +39,54 @@ for (let i = 0; i < 25; i++) {
 }
 
 setInterval(createHeart, 700);
+
+
+/* =================================
+   BIRTHDAY CONFETTI EFFECT
+================================= */
+
+const confettiContainer =
+    document.getElementById("confetti-container");
+
+const confettiColors = [
+    "#ff3c87",
+    "#ffd1df",
+    "#ffffff",
+    "#e8b65c",
+    "#c83275"
+];
+
+function createConfetti() {
+
+    if (!confettiContainer) return;
+
+    const confetti = document.createElement("span");
+
+    confetti.classList.add("confetti");
+
+    confetti.style.left = Math.random() * 100 + "%";
+
+    confetti.style.backgroundColor =
+        confettiColors[
+            Math.floor(Math.random() * confettiColors.length)
+        ];
+
+    confetti.style.animationDuration =
+        Math.random() * 4 + 4 + "s";
+
+    confetti.style.animationDelay =
+        Math.random() * 4 + "s";
+
+    confettiContainer.appendChild(confetti);
+
+    setTimeout(() => {
+        confetti.remove();
+    }, 10000);
+
+}
+
+for (let i = 0; i < 65; i++) {
+    createConfetti();
+}
+
+setInterval(createConfetti, 250);

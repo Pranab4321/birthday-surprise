@@ -212,3 +212,535 @@ footer {
 footer span {
     margin-right: 4px;
 }
+
+
+/* ======================================
+   SCREEN 2 - BIRTHDAY WELCOME
+====================================== */
+
+.birthday-screen {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(ellipse at center, #18050e 0%, #080307 65%);
+
+    z-index: 10;
+}
+
+.birthday-screen[hidden] {
+    display: none;
+}
+
+/* Screen number */
+
+.screen-number {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+
+    width: 22px;
+    height: 22px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 10px;
+}
+
+/* Music icon */
+
+.music-icon {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.06);
+    color: white;
+
+    font-size: 17px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Birthday content */
+
+.birthday-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    padding: 25px 15px;
+
+    text-align: center;
+
+    animation: birthday-entrance 1.3s ease both;
+}
+
+/* Main heading */
+
+.birthday-title {
+    position: relative;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 5vw, 58px);
+
+    font-weight: 500;
+    line-height: 0.95;
+
+    color: #fff0f5;
+}
+
+/* Pink cursive Birthday */
+
+.script-text {
+    display: block;
+
+    margin: 4px 0;
+
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(52px, 7vw, 78px);
+
+    color: #ff6da9;
+
+    text-shadow:
+        0 0 10px rgba(255, 45, 130, 0.5),
+        0 0 25px rgba(255, 45, 130, 0.2);
+}
+
+/* Heart beside name */
+
+.birthday-heart {
+    display: inline-block;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+
+    color: #ff3287;
+
+    text-shadow: 0 0 15px #ff1769;
+
+    animation: heart-beat 1.5s infinite;
+}
+
+/* Date */
+
+.birthday-date {
+    margin-top: 13px;
+
+    font-size: 11px;
+    color: #f4b5cd;
+}
+
+/* Birthday message */
+
+.birthday-message {
+    margin-top: 13px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 1.8;
+
+    font-weight: 300;
+
+    color: #cbb6c0;
+}
+
+/* Unfold button */
+
+.unfold-button {
+    margin-top: 24px;
+
+    min-width: 145px;
+    height: 35px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        100deg,
+        #e91e63,
+        #c91555,
+        #e92c78
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(255, 20, 110, 0.35);
+
+    transition: 0.3s ease;
+}
+
+.unfold-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 28px rgba(255, 20, 110, 0.6);
+}
+
+
+/* =========================================
+   SCREEN 3 - OUR PRECIOUS MEMORIES
+========================================= */
+
+.memories-screen {
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    /* background:
+        radial-gradient(
+            ellipse at center,
+            #210714 0%,
+            #10040b 45%,
+            #080307 100%
+        ); */
+
+    
+    background:
+        radial-gradient(ellipse at 50% 25%, #31091d 0%, transparent 48%),
+        radial-gradient(ellipse at 10% 85%, #300619 0%, transparent 45%),
+        #080307;
+        z-index: 11;
+    }
+
+.memories-screen[hidden] {
+    display: none;
+}
+
+/* Main content */
+
+.memories-content {
+    width: 100%;
+    max-width: 850px;
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    animation: birthday-entrance 1s ease both;
+}
+
+/* Screen number */
+
+.memories-screen .screen-number {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
+
+/* Heading */
+
+.memories-title {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(24px, 3vw, 32px);
+
+    font-weight: 500;
+
+    color: #ffe7f0;
+
+    text-shadow: 0 0 12px rgba(255, 80, 150, 0.2);
+}
+
+.memories-title span {
+    color: #ff438a;
+}
+
+/* Subtitle */
+
+.memories-subtitle {
+    margin-top: 7px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 300;
+
+    color: #c9aab8;
+}
+
+/* =========================================
+   PHOTO GALLERY
+========================================= */
+
+.memory-gallery {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    margin-top: 35px;
+
+    width: 100%;
+}
+
+/* Polaroid cards */
+
+.polaroid {
+    position: relative;
+
+    width: 23%;
+    max-width: 175px;
+
+    padding: 7px 7px 13px;
+
+    background: #f7f1ed;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.55),
+        0 0 8px rgba(255, 255, 255, 0.12);
+
+    transition: transform 0.3s ease;
+}
+
+/* Individual rotations */
+
+.polaroid-1 {
+    transform: rotate(-3deg);
+}
+
+.polaroid-2 {
+    transform: rotate(2deg);
+}
+
+.polaroid-3 {
+    transform: rotate(-2deg);
+}
+
+.polaroid-4 {
+    transform: rotate(3deg);
+}
+
+/* Hover effect */
+
+.polaroid:hover {
+    transform: rotate(0deg) translateY(-8px);
+
+    z-index: 2;
+}
+
+/* Photograph wrapper */
+
+.photo-wrapper {
+    width: 100%;
+
+    aspect-ratio: 1 / 1.08;
+
+    overflow: hidden;
+
+    background: #24121a;
+}
+
+/* Actual photographs */
+
+.photo-wrapper img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* Photo captions */
+
+.polaroid p {
+    margin-top: 8px;
+
+    color: #35252b;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(10px, 1.3vw, 15px);
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+/* Flower decorations */
+
+.flower-decoration {
+    position: absolute;
+
+    top: -12px;
+    right: -8px;
+
+    font-size: 24px;
+
+    filter: drop-shadow(0 0 5px #ff5c9b);
+
+    z-index: 3;
+}
+
+/* =========================================
+   PLAY MOVIE BUTTON
+========================================= */
+
+.play-movie-button {
+    margin-top: 30px;
+
+    min-width: 145px;
+    height: 36px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        100deg,
+        #e91e63,
+        #c91555,
+        #e92c78
+    );
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(255, 20, 110, 0.35);
+
+    transition: 0.3s ease;
+}
+
+.play-movie-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 25px rgba(255, 20, 110, 0.6);
+}
+
+
+/* Shared floating hearts above screen backgrounds */
+
+#heart-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 12;
+}
+
+.heart-particle {
+    z-index: 12;
+}
+
+
+/* SCREEN 4: OUR SPECIAL VIDEO */
+
+.video-screen {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(ellipse at 50% 25%, #31091d 0%, transparent 48%),
+        radial-gradient(ellipse at 10% 85%, #300619 0%, transparent 45%),
+        #080307;
+
+    color: #fff;
+    text-align: center;
+}
+
+.video-screen[hidden] {
+    display: none !important;
+}
+
+.video-content {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.video-title {
+    font-family: "Great Vibes", cursive;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #f6c6d8;
+    margin: 15px 0 35px;
+}
+
+.video-frame {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid rgba(246, 198, 216, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 105, 160, 0.2);
+    background: #000;
+}
+
+.video-frame video {
+    display: block;
+    width: 100%;
+    max-height: 480px;
+    object-fit: contain;
+}
+
+.continue-button {
+    margin-top: 30px;
+    padding: 13px 35px;
+    border: 1px solid #f6c6d8;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #8e3158, #c65b83);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.continue-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(246, 198, 216, 0.4);
+}
