@@ -78,20 +78,38 @@ function showScreen(screenId) {
 
 /* SCREEN 1 -> SCREEN 2 */
 
+// const loginForm = document.getElementById("login-form");
+
+// if (loginForm) {
+
+//     loginForm.addEventListener("submit", function(event) {
+
+//         event.preventDefault();
+
+//         showScreen("birthday-screen");
+
+//     });
+
+// }
+
 const loginForm = document.getElementById("login-form");
 
 if (loginForm) {
-
-    loginForm.addEventListener("submit", function(event) {
-
+    loginForm.addEventListener("submit", event => {
         event.preventDefault();
 
-        showScreen("birthday-screen");
+        const password = document.getElementById("password").value;
+        const correctPassword = "2005";
 
+        if (password === correctPassword) {
+            showScreen("birthday-screen");
+        } else {
+            alert("Incorrect password! Please try again. ❤️");
+            document.getElementById("password").value = "";
+            document.getElementById("password").focus();
+        }
     });
-
 }
-
 
 /* SCREEN 2 -> SCREEN 3 */
 
